@@ -1,0 +1,268 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 115,
+        "name": "Normal PO order",
+        "description": "",
+        "id": "r-pacmango.com-crm-e-coomerece-feature-main-finish..;normal-po-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16182466900,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "Navigate user to Login Page \"http://devrtrac.r-pac.com/\" and \"Chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://devrtrac.r-pac.com/",
+                  "offset": 29
+                },
+                {
+                  "val": "Chrome",
+                  "offset": 62
+                }
+              ],
+              "location": "LoginStepDefinition.navigateUser(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4921900,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "title of login page",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21812811901,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user enters \"Admin@diesel.com\" and \"Lousie#786\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin@diesel.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Lousie#786",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79100,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70001,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_hopme_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31902413900,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "Search Release PO page with CPO ID \"CK_IN20201974\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CK_IN20201974",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDefinition.Release_PO_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3122089400,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Search Vendor ID \"HK000227\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HK000227",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStepDefinition.SuppilerSearch(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10751556500,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "click on PO \"CK_IN20201974\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CK_IN20201974",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefinition.POClickb(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13205373100,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "AddToCart with Create Label",
+            "match": {
+              "location": "LoginStepDefinition.getAddToCartCareLabel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2978448300,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "goto checkout page",
+            "match": {
+              "location": "LoginStepDefinition.goto_checkout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6363594100,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "Verify All PO data with db",
+            "match": {
+              "location": "LoginStepDefinition.verifyAllPOData()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7838821001,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "Ship To,selct Production location Vendor PO, Requird Shipment Date",
+            "match": {
+              "location": "LoginStepDefinition.select_checkout_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30873235700,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "Confirm Order",
+            "match": {
+              "location": "LoginStepDefinition.confirm_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 300600,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "Print Confirmation and done",
+            "match": {
+              "location": "LoginStepDefinition.print_confirmation_done()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16910405299,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 109,
+                "value": "#Then Goto Report\u003eOrder Status"
+              },
+              {
+                "line": 110,
+                "value": "#Then Goto Report\u003eOrder Status-\u003eCancel Order"
+              }
+            ],
+            "line": 111,
+            "name": "Logout",
+            "match": {
+              "location": "LoginStepDefinition.logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3763735999,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "Close Browser",
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 92,
+            "name": "@testcaseN001"
+          }
+        ]
+      }
+    ],
+    "name": "R-PACMango.com CRM E-Coomerece Feature Main Finish..",
+    "description": "",
+    "id": "r-pacmango.com-crm-e-coomerece-feature-main-finish..",
+    "keyword": "Feature",
+    "uri": "Diesel.feature"
+  }
+]
